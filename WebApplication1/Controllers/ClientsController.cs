@@ -29,7 +29,7 @@ namespace WebApplication1.Controllers
             return _context.Clients;
         }
 
-        //GET:api/Clients/5
+     //   GET:api/Clients/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetClients([FromRoute] int id)
         {
@@ -46,7 +46,7 @@ namespace WebApplication1.Controllers
 
             return Ok(client);
         }
-
+        
 
         // PUT: api/Clients/5
         [HttpPut("{id}")]
