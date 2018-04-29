@@ -9,6 +9,7 @@ namespace WebApplication1.Models
     public class DataContext: DbContext
     {
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Reserve> Reserves { get; set; }
 
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {

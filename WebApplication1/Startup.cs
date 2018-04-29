@@ -26,6 +26,7 @@ namespace WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("Client"));
+            services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("Reserve"));
             services.AddMvc();
         }
 
